@@ -1,0 +1,93 @@
+type user {
+  username: String!
+  solved: [Userwhen]
+  score: Int!
+  lastsolve: Time
+}
+
+
+type Userwhen {
+  challenge: challenge!
+  Timestamp: Time!
+}
+
+type scoreb {
+  user: user!
+}
+
+type Fulluser {
+  username: String!
+  fullname: String!
+  email: String!
+  solved: [Userwhen]
+  score: Int!
+  lastsolve: Time
+  age: String!
+  gender: String!
+  institution: String!
+  contact: String!
+  place: String!
+  district: String!
+  state: String!
+}
+
+type Notification{
+  ID: String!
+  name: String!
+  description: String!
+  timestamp: Time!
+}
+
+input register_input {
+  email: String!,
+  username: String!,
+  password: String!,
+  age: Int!,
+  gender: String!
+}
+
+input login_input {
+  username: String!,
+  password: String! 
+}
+
+input register_admin_data {
+  email: String!,
+  username: String!,
+  password: String!,
+  secret: String!
+}
+
+input notificationinp {
+  name: String!,
+  description: String!
+}
+
+input notifiedit {
+  id: String!,
+  name: String!,
+  description: String!,
+}
+
+input useredit {
+  username: String,
+  fullname: String,
+  age: String,
+  gender: String,
+  institution: String,
+  contact: String,
+  place: String,
+  district: String,
+  state: String
+}
+
+input resetpwd {
+  oldpwd: String!
+  newpwda: String!
+  newpwdb: String!
+}
+
+input adminPreset {
+  name: String!
+  password: String!
+}

@@ -1,0 +1,60 @@
+  type challenge {
+  ID: ID!
+  name: String!
+  description: String!
+  category: [String]!
+  tags: [String]!
+  value: Int!
+  flags: String!
+  solves: Int!
+  teamssolved: [Challwhen]
+  visibility: Boolean!
+  file: [String]
+}
+
+type Challwhen {
+  user: user!
+  TimeStamp: Time!
+}
+
+input add_challenge_data {
+  name: String!,
+  description: String!
+  category: [String]!,
+  tags: [String]!
+  value: Int!
+  flags: String!
+}
+
+input edit_challenge_data {
+  ID: String!
+  name: String!,
+  description: String!
+  category: [String]!,
+  tags: [String]!
+  value: Int!
+  flags: String!
+}
+
+input public {
+  ID: String!
+  visibility: Boolean!
+}
+
+input delfile {
+  ID: String!,
+  name: String!
+}
+
+input Manager {
+  status: Int, # status could be 0,1,2,3 where each number specifies a status
+  details: String,
+  scoreboardStats: Int
+}
+
+
+type Managerial {
+  status: Int, # status could be 0,1,2,3 where each number specifies a status
+  details: String,
+  scoreboardStats: Int
+}

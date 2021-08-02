@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+    pandora:
+        build: '.'
+        restart: on-failure
+        links:
+            - mongo
+        ports:
+            - "80:80"
+      
+    mongo:
+        image: mongo
+        restart: always

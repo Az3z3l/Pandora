@@ -1,0 +1,7 @@
+static/frontend/node_modules/*
+*.log
+CTF-Framework/assets/images/*
+CTF-Framework/static/frontend/node_modules/*
+challenges/*
+userphoto/*
+go.sum

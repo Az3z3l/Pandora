@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+body {
+    background: #151525;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    color: #FFF;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+.challengefont {
+   font-family: 'Raleway', sans-serif;
+   /* color: fuchsia;
+   background-color: red; */
+ }
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Orbitron:wght@400;500&family=Poiret+One&family=Special+Elite&display=swap');
+.card{
+    font-family: 'Advent Pro', sans-serif;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-family: 'Poiret One', cursive;
+
+    font-family: 'Special Elite', cursive;
+
+    background: #00000000;
+
+}
+
+
+.main-logo {
+    height: 30px; 
+    margin-right: 30px;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.7);
+    ;
+    padding: -1px 16px;
+    box-shadow: 10px 2px 20px 1px #000;
+}
+
+li.nav-item {
+    margin-right: 50px;
+}
+
+.nav-link {
+    color: #FFF;
+    font-size: 1.2em;
+}
+
+header .login-btn {
+    color: blue;
+}
+
+.jumbotron {
+    height: 80vh;
+}
+
+.btn {
+    border: none;
+}
+
+.btn-primary {
+    background: #265664;
+    font-size: 23px;
+    margin: 5px;
+}
+
+.btn-success {
+    background: #4e6c4d;
+    font-size: 23px;
+}
+
+#btext {
+    color: #f9f3f4;
+    position: fixed;
+    text-align: left;
+    top: 10%;
+    line-height: 0.4cm;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.modal-content {
+    background: #151525;
+}
+
+.close {
+    color: #FFF;
+}
+
+.head {
+    margin: 20px;
+}
+
+.modal-content {
+    background: #151525;
+}
+
+.close {
+    color: #FFF;
+}
+
+#btext1 {
+    color: #f9f3f4;
+    position: fixed;
+    top: 27%;
+    left: 65%;
+    line-height: 0.4cm;
+    width: 500px;
+}
+
+#btext_login {
+    position: absolute;
+    top: 25%;
+    left: 6%;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
+
+#particles-js {
+    position: fixed;
+    min-height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -99;
+}
+
+.spectrum {
+    background-size: contain;
+    width: 100%;
+    height: 3px;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 106;
+    background: url(../images/spectrum.jpg) repeat;
+}
+
+.Table{
+    color: #fff;
+}
+.spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height:60px;
+    width:60px;
+    margin:0px auto;
+    -webkit-animation: rotation .6s infinite linear;
+    -moz-animation: rotation .6s infinite linear;
+    -o-animation: rotation .6s infinite linear;
+    animation: rotation .6s infinite linear;
+    border-left:6px solid rgba(0,174,239,.15);
+    border-right:6px solid rgba(0,174,239,.15);
+    border-bottom:6px solid rgba(0,174,239,.15);
+    border-top:6px solid rgba(0,174,239,.8);
+    border-radius:100%;
+}
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(359deg);}
+ }
+ @-moz-keyframes rotation {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(359deg);}
+ }
+ @-o-keyframes rotation {
+    from {-o-transform: rotate(0deg);}
+    to {-o-transform: rotate(359deg);}
+ }
+ @keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(359deg);}
+ }

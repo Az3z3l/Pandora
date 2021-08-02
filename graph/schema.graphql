@@ -1,0 +1,39 @@
+scalar Time
+
+type Query {
+  user: [user]
+  oneuser(username: String!): user
+  userid: user
+  challenge: [challenge]
+  onechallenge(id: String!):challenge
+  login(input: login_input): String!
+  ping(name: String!): String!
+  scoreboard: [user!]
+  userdata(id: String!):Fulluser
+  me:Fulluser
+  notify: [Notification]
+  onenotify(id: String!): Notification
+  frontendmanagement: Managerial
+}
+
+type Mutation {
+  register(input:register_input): String!
+  add_admin(input: register_admin_data): String!
+
+  add_notifications(input: notificationinp!): String!
+  edit_notification(input: notifiedit!): String!
+  delete_notification(id: String!): String!
+
+  updateUser(input: useredit) : String!
+  reset_pwd(input: resetpwd): String!
+  forcepassreset(input: adminPreset): String!
+
+  flag_submit(input: String!) : String!
+  add_challenge(input: add_challenge_data): String!
+  edit_challenge(input: edit_challenge_data): String!
+  deletechallenge(id: String!): String!
+  deletefile(input: delfile): String!
+  challvisibility(input: public): String!
+
+  adminmanagement(input: Manager): String!
+}
